@@ -1,0 +1,122 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f1f3f5;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FA8072;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#FA8072;stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FA8072;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#FA8072;stop-opacity:0" />
+    </radialGradient>
+    
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FA8072;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#FA8072;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#FA8072;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="url(#bgGradient)"/>
+  
+  <g opacity="0.03">
+    <path d="M0 0 L1920 0" stroke="#000" stroke-width="1"/>
+    <path d="M0 60 L1920 60" stroke="#000" stroke-width="1"/>
+    <path d="M0 120 L1920 120" stroke="#000" stroke-width="1"/>
+    <path d="M0 180 L1920 180" stroke="#000" stroke-width="1"/>
+    <path d="M0 240 L1920 240" stroke="#000" stroke-width="1"/>
+    <path d="M0 300 L1920 300" stroke="#000" stroke-width="1"/>
+    <path d="M0 360 L1920 360" stroke="#000" stroke-width="1"/>
+    <path d="M0 420 L1920 420" stroke="#000" stroke-width="1"/>
+    <path d="M0 480 L1920 480" stroke="#000" stroke-width="1"/>
+    <path d="M0 540 L1920 540" stroke="#000" stroke-width="1"/>
+    <path d="M0 600 L1920 600" stroke="#000" stroke-width="1"/>
+    <path d="M0 660 L1920 660" stroke="#000" stroke-width="1"/>
+    <path d="M0 720 L1920 720" stroke="#000" stroke-width="1"/>
+    <path d="M0 780 L1920 780" stroke="#000" stroke-width="1"/>
+    <path d="M0 840 L1920 840" stroke="#000" stroke-width="1"/>
+    <path d="M0 900 L1920 900" stroke="#000" stroke-width="1"/>
+    <path d="M0 960 L1920 960" stroke="#000" stroke-width="1"/>
+    <path d="M0 1020 L1920 1020" stroke="#000" stroke-width="1"/>
+    <path d="M0 1080 L1920 1080" stroke="#000" stroke-width="1"/>
+    
+    <path d="M0 0 L0 1080" stroke="#000" stroke-width="1"/>
+    <path d="M60 0 L60 1080" stroke="#000" stroke-width="1"/>
+    <path d="M120 0 L120 1080" stroke="#000" stroke-width="1"/>
+    <path d="M180 0 L180 1080" stroke="#000" stroke-width="1"/>
+    <path d="M240 0 L240 1080" stroke="#000" stroke-width="1"/>
+    <path d="M300 0 L300 1080" stroke="#000" stroke-width="1"/>
+    <path d="M360 0 L360 1080" stroke="#000" stroke-width="1"/>
+    <path d="M420 0 L420 1080" stroke="#000" stroke-width="1"/>
+    <path d="M480 0 L480 1080" stroke="#000" stroke-width="1"/>
+    <path d="M540 0 L540 1080" stroke="#000" stroke-width="1"/>
+    <path d="M600 0 L600 1080" stroke="#000" stroke-width="1"/>
+    <path d="M660 0 L660 1080" stroke="#000" stroke-width="1"/>
+    <path d="M720 0 L720 1080" stroke="#000" stroke-width="1"/>
+    <path d="M780 0 L780 1080" stroke="#000" stroke-width="1"/>
+    <path d="M840 0 L840 1080" stroke="#000" stroke-width="1"/>
+    <path d="M900 0 L900 1080" stroke="#000" stroke-width="1"/>
+    <path d="M960 0 L960 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1020 0 L1020 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1080 0 L1080 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1140 0 L1140 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1200 0 L1200 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1260 0 L1260 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1320 0 L1320 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1380 0 L1380 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1440 0 L1440 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1500 0 L1500 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1560 0 L1560 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1620 0 L1620 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1680 0 L1680 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1740 0 L1740 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1800 0 L1800 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1860 0 L1860 1080" stroke="#000" stroke-width="1"/>
+    <path d="M1920 0 L1920 1080" stroke="#000" stroke-width="1"/>
+  </g>
+  
+  <circle cx="300" cy="200" r="300" fill="url(#orb1)">
+    <animate attributeName="cx" values="300;400;300" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="200;300;200" dur="15s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="1600" cy="800" r="400" fill="url(#orb2)">
+    <animate attributeName="cx" values="1600;1500;1600" dur="25s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="800;700;800" dur="18s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="960" cy="540" r="250" fill="url(#orb1)">
+    <animate attributeName="r" values="250;300;250" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.5;1" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  
+  <line x1="0" y1="100" x2="1920" y2="100" stroke="url(#lineGradient)" stroke-width="2">
+    <animate attributeName="y1" values="100;150;100" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="100;150;100" dur="8s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="0" y1="980" x2="1920" y2="980" stroke="url(#lineGradient)" stroke-width="2">
+    <animate attributeName="y1" values="980;930;980" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="980;930;980" dur="10s" repeatCount="indefinite"/>
+  </line>
+  
+  <rect x="100" y="400" width="40" height="40" fill="#FA8072" opacity="0.05" transform="rotate(45 120 420)">
+    <animateTransform attributeName="transform" type="rotate" values="45 120 420;90 120 420;45 120 420" dur="15s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="400;350;400" dur="10s" repeatCount="indefinite"/>
+  </rect>
+  
+  <circle cx="1700" cy="300" r="20" fill="#FA8072" opacity="0.08">
+    <animate attributeName="cy" values="300;250;300" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="20;25;20" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  
+  <polygon points="200,900 220,940 180,940" fill="#FA8072" opacity="0.06">
+    <animate attributeName="points" values="200,900 220,940 180,940;200,880 220,920 180,920;200,900 220,940 180,940" dur="14s" repeatCount="indefinite"/>
+  </polygon>
+</svg>
