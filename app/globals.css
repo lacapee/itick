@@ -3,32 +3,33 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Updated color theme to white, salmon, and dark gray as specified */
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.35 0 0);
-  --card: oklch(0.98 0 0);
-  --card-foreground: oklch(0.35 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.35 0 0);
-  --primary: oklch(0.65 0.2 25);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(1 0 0);
-  --secondary-foreground: oklch(0.35 0 0);
-  --muted: oklch(0.93 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.65 0.2 25);
-  --accent-foreground: oklch(1 0 0);
+  --background: #ffffff;
+  --foreground: #222222;
+  --card: #ffffff;
+  --card-foreground: #222222;
+  --popover: #ffffff;
+  --popover-foreground: #222222;
+  --primary: #fa8072;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f5f5;
+  --secondary-foreground: #222222;
+  --muted: #f5f5f5;
+  --muted-foreground: #666666;
+  --accent: #fff5f3;
+  --accent-foreground: #222222;
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.93 0 0);
-  --input: oklch(0.96 0 0);
-  --ring: oklch(0.65 0.2 25);
+  --destructive-foreground: #ffffff;
+  --border: #e5e5e5;
+  --input: #f5f5f5;
+  --ring: #fa8072;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
+  --radius: 0.5rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -75,7 +76,11 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
+  /* Updated fonts to Poppins and DM Sans */
+  --font-sans: var(--font-poppins), system-ui, sans-serif;
+  --font-body: var(--font-dm-sans), system-ui, sans-serif;
+  /* Added Playfair Display for elegant serif accent text */
+  --font-serif: var(--font-playfair), serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -137,7 +142,7 @@
   @keyframes fade-in {
     from {
       opacity: 0;
-      transform: translateY(10px);
+      transform: translateY(20px);
     }
     to {
       opacity: 1;
@@ -191,6 +196,23 @@
     }
   }
 
+  /* Added enhanced float animation with more dynamic movement */
+  @keyframes float-dynamic {
+    0%,
+    100% {
+      transform: translateY(0px) translateX(0px) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-20px) translateX(5px) rotate(1deg);
+    }
+    50% {
+      transform: translateY(-10px) translateX(-5px) rotate(-1deg);
+    }
+    75% {
+      transform: translateY(-15px) translateX(3px) rotate(0.5deg);
+    }
+  }
+
   @keyframes blob-float {
     0%,
     100% {
@@ -216,10 +238,20 @@
     }
   }
 
+  /* Enhanced shimmer animation with gradient */
+  @keyframes shimmer-gradient {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
   @keyframes slide-in-left {
     from {
       opacity: 0;
-      transform: translateX(-20px);
+      transform: translateX(-30px);
     }
     to {
       opacity: 1;
@@ -230,7 +262,7 @@
   @keyframes slide-in-right {
     from {
       opacity: 0;
-      transform: translateX(20px);
+      transform: translateX(30px);
     }
     to {
       opacity: 1;
@@ -247,6 +279,10 @@
       transform: translateY(-10px);
     }
   }
+
+  /* Added more dynamic float animation */
+  /* This comment is now redundant as float-dynamic is updated above */
+  /* @keyframes float-dynamic was moved and updated */
 
   @keyframes pulse-glow {
     0%,
@@ -269,8 +305,41 @@
     }
   }
 
+  /* Added image hover effect keyframe */
+  @keyframes image-lift {
+    0% {
+      transform: scale(1) translateY(0);
+    }
+    100% {
+      transform: scale(1.05) translateY(-4px);
+    }
+  }
+
+  /* Added hamburger menu animation keyframes */
+  @keyframes menu-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes menu-slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   .animate-fade-in {
-    animation: fade-in 0.6s ease-out forwards;
+    animation: fade-in 0.8s ease-out forwards;
     opacity: 0;
   }
 
@@ -302,18 +371,39 @@
     background-size: 200% 100%;
   }
 
+  /* Added gradient shimmer for text effects */
+  .animate-shimmer-gradient {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .animate-shimmer-gradient::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(250, 128, 114, 0.3), transparent);
+    animation: shimmer-gradient 3s infinite;
+  }
+
   .animate-slide-in-left {
-    animation: slide-in-left 0.6s ease-out forwards;
+    animation: slide-in-left 0.7s ease-out forwards;
     opacity: 0;
   }
 
   .animate-slide-in-right {
-    animation: slide-in-right 0.6s ease-out forwards;
+    animation: slide-in-right 0.7s ease-out forwards;
     opacity: 0;
   }
 
   .animate-float {
     animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-float-dynamic {
+    animation: float-dynamic 6s ease-in-out infinite;
   }
 
   .animate-pulse-glow {
@@ -325,8 +415,59 @@
     opacity: 0;
   }
 
+  .animate-menu-fade-in {
+    animation: menu-fade-in 0.3s ease-out forwards;
+  }
+
+  .animate-menu-slide-in {
+    animation: menu-slide-in 0.4s ease-out forwards;
+  }
+
+  /* Added marquee animation styles */
+  .marquee-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .marquee-content {
+    display: flex;
+    animation: marquee-scroll 30s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes marquee-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .marquee-item {
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(250, 128, 114, 0.08);
+  }
+
+  .marquee-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(250, 128, 114, 0.2);
+  }
+
+  /* Pause animation on hover for better UX */
+  .marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+  }
+
   .transition-smooth {
     @apply transition-all duration-300 ease-out;
+  }
+
+  /* Added vertical writing mode for social sidebar */
+  .writing-mode-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
   }
 
   /* Respect prefers-reduced-motion for accessibility */
