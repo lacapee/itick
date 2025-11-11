@@ -275,8 +275,8 @@ export function HeroSection() {
         }}
         transition={{ duration: 0.3, ease: "easeOut" }}
       >
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
-          <div className="lg:col-span-7 pt-8">
+        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+          <div className="lg:col-span-7 pt-8 w-full">
             <motion.h1
               className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#222222] leading-[1.1] mb-8"
               style={{
@@ -355,7 +355,7 @@ export function HeroSection() {
             </motion.p>
 
             <motion.div
-              className="flex flex-wrap gap-4"
+              className="flex flex-wrap gap-4 mb-12 lg:mb-0"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.7 }}
@@ -382,15 +382,16 @@ export function HeroSection() {
             </motion.div>
           </div>
 
-          <div className="lg:col-span-5 space-y-16 pt-8">
+          <div className="w-full lg:col-span-5 grid grid-cols-2 lg:flex lg:flex-col gap-8 lg:gap-16 pt-0 lg:pt-8">
             <motion.div
               ref={satisfactionRef}
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
+              className="flex flex-col"
             >
               <div
-                className="text-7xl md:text-8xl lg:text-9xl font-extrabold text-[#222222] mb-4 leading-none relative"
+                className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold text-[#222222] mb-2 lg:mb-4 leading-none relative"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 <span className="relative inline-block">
@@ -399,7 +400,7 @@ export function HeroSection() {
                 </span>
               </div>
               <p
-                className="text-base md:text-lg text-[#666666] leading-relaxed max-w-xs"
+                className="text-sm sm:text-base md:text-lg text-[#666666] leading-relaxed"
                 style={{ fontFamily: "var(--font-dm-sans)" }}
               >
                 Clients Satisfied And Repeating.
@@ -411,9 +412,10 @@ export function HeroSection() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.9, duration: 0.8 }}
+              className="flex flex-col"
             >
               <div
-                className="text-7xl md:text-8xl lg:text-9xl font-extrabold text-[#222222] mb-4 leading-none relative"
+                className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold text-[#222222] mb-2 lg:mb-4 leading-none relative"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 <span className="relative inline-block">
@@ -422,7 +424,7 @@ export function HeroSection() {
                 </span>
               </div>
               <p
-                className="text-base md:text-lg text-[#666666] leading-relaxed max-w-xs"
+                className="text-sm sm:text-base md:text-lg text-[#666666] leading-relaxed"
                 style={{ fontFamily: "var(--font-dm-sans)" }}
               >
                 Project Completed in 25 Countries.

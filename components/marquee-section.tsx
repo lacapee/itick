@@ -23,7 +23,7 @@ export function MarqueeSection() {
           {services.map((service, index) => (
             <div
               key={`service-1-${index}`}
-              className="marquee-item group inline-flex items-center justify-center px-8 py-3 mx-3 border-[1.5px] border-[#FA8072] rounded-full bg-white text-[#222222] font-medium text-base transition-all duration-300 hover:bg-[#FA8072] hover:text-white hover:shadow-lg whitespace-nowrap cursor-pointer"
+              className="marquee-item group inline-flex items-center justify-center px-6 sm:px-8 py-2.5 sm:py-3 mx-2 sm:mx-3 border-[1.5px] border-[#FA8072] rounded-full bg-white text-[#222222] font-medium text-sm sm:text-base transition-all duration-300 hover:bg-[#FA8072] hover:text-white hover:shadow-lg whitespace-nowrap cursor-pointer touch-manipulation"
               style={{ fontFamily: "var(--font-poppins)" }}
             >
               {service}
@@ -33,7 +33,7 @@ export function MarqueeSection() {
           {services.map((service, index) => (
             <div
               key={`service-2-${index}`}
-              className="marquee-item group inline-flex items-center justify-center px-8 py-3 mx-3 border-[1.5px] border-[#FA8072] rounded-full bg-white text-[#222222] font-medium text-base transition-all duration-300 hover:bg-[#FA8072] hover:text-white hover:shadow-lg whitespace-nowrap cursor-pointer"
+              className="marquee-item group inline-flex items-center justify-center px-6 sm:px-8 py-2.5 sm:py-3 mx-2 sm:mx-3 border-[1.5px] border-[#FA8072] rounded-full bg-white text-[#222222] font-medium text-sm sm:text-base transition-all duration-300 hover:bg-[#FA8072] hover:text-white hover:shadow-lg whitespace-nowrap cursor-pointer touch-manipulation"
               style={{ fontFamily: "var(--font-poppins)" }}
             >
               {service}
